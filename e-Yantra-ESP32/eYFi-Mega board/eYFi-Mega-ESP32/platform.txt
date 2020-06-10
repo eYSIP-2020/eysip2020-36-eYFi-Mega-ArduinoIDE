@@ -110,11 +110,11 @@ tools.esptool_py.upload.params.quiet=
 # --------------------------------------------------------------------------
 # eYFi-Mega (ESP32) Upload Button
 
-tools.esptool_py.upload.pattern.windows="{runtime.platform.path}\tools\eyfi-mega\windows/{cmdey} " "{builde32.defines}" -cpu=esp32 -port={serial.port} -baud={upload.speed} -exe={runtime.platform.path}\tools\eyfi-mega\windows -bin={build.path}/{build.project_name}.bin
+tools.esptool_py.upload.pattern.windows="{runtime.platform.path}\tools\eyfi-mega\windows/{cmdey} " "{builde32.defines}" "-cpu=esp32" "-port={serial.port}" "-baud={upload.speed}" "-exe={runtime.platform.path}\tools\eyfi-mega\windows" "-bin={build.path}/{build.project_name}.bin"
 
-tools.esptool_py.upload.pattern.linux="{runtime.platform.path}/tools/eyfi-mega/linux/{cmdey}" "{builde32.defines}" -cpu=esp32 -port={serial.port} -baud={upload.speed} -exe={runtime.platform.path}\tools\eyfi-mega\linux -bin={build.path}/{build.project_name}.bin
+tools.esptool_py.upload.pattern.linux="{runtime.platform.path}/tools/eyfi-mega/linux/{cmdey}" "{builde32.defines}" "-cpu=esp32" "-port={serial.port}" "-baud={upload.speed}" "-exe={runtime.platform.path}\tools\eyfi-mega\linux" "-bin={build.path}/{build.project_name}.bin"
 
-tools.esptool_py.upload.pattern.macosx="{runtime.platform.path}/tools/eyfi-mega/macosx/{cmdey}" "{builde32.defines}" -cpu=esp32 -port={serial.port} -baud={upload.speed} -exe={runtime.platform.path}\tools\eyfi-mega\macosx -bin={build.path}/{build.project_name}.bin
+tools.esptool_py.upload.pattern.macosx="{runtime.platform.path}/tools/eyfi-mega/macosx/{cmdey}" "{builde32.defines}" "-cpu=esp32" "-port={serial.port}" "-baud={upload.speed}" "-exe={runtime.platform.path}\tools\eyfi-mega\macosx" "-bin={build.path}/{build.project_name}.bin"
 # --------------------------------------------------------------------------
 
 
