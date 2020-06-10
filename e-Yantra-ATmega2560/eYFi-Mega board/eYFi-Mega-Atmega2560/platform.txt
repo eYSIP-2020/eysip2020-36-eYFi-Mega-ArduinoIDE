@@ -126,11 +126,11 @@ tools.avrdude.upload.params.noverify=-V
 
 #---------------------------------------------------------------------------------------
 # eYFi-Mega (ATmega2560) Upload Button
-tools.avrdude.upload.pattern.windows="{cmd.path}" "{build.defines}" -exe={runtime.platform.path}\tools\eyfi-mega\windows -port={serial.port} -bin={build.path}/{build.project_name}.bin
+tools.avrdude.upload.pattern.windows="{cmd.path}" "{build.defines}" "-exe={runtime.platform.path}\tools\eyfi-mega\windows\" "-port={serial.port}" "-bin={build.path}/{build.project_name}.bin"
 
-tools.avrdude.upload.pattern.linux="{cmd.path}" "{build.defines}" -exe={runtime.platform.path}\tools\eyfi-mega\linux -port={serial.port} -bin={build.path}/{build.project_name}.bin
+tools.avrdude.upload.pattern.linux="{cmd.path}" "{build.defines}" "-exe={runtime.platform.path}\tools\eyfi-mega\linux" "-port={serial.port}" "-bin={build.path}/{build.project_name}.bin"
 
-tools.avrdude.upload.pattern.macosx="{cmd.path}" "{build.defines}" -exe={runtime.platform.path}\tools\eyfi-mega\macosx -port={serial.port} -bin={build.path}/{build.project_name}.bin
+tools.avrdude.upload.pattern.macosx="{cmd.path}" "{build.defines}" "-exe={runtime.platform.path}\tools\eyfi-mega\macosx" "-port={serial.port}" "-bin={build.path}/{build.project_name}.bin"
 #---------------------------------------------------------------------------------------
 
 
