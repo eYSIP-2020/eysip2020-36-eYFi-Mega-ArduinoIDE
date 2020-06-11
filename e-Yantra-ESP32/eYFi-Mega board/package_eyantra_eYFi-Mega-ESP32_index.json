@@ -11,7 +11,7 @@
           "category": "Contributed by e-Yantra", 
           "name": "eYFi-Mega ESP32 Section", 
           "url": "https://github.com/souravjena/eysip2020-36-eYFi-Mega-ArduinoIDE/blob/master/e-Yantra-ESP32/eYFi-Mega%20board/eYFi-Mega-ESP32.zip?raw=true", 
-          "checksum": "SHA-256:39b69b7393d835c24563e9561559e30e934907de7da88eb80a2441a2cf21fcc6", 
+          "checksum": "SHA-256:8217d88dc05f34a9f631feb0e681a3e04fec9af8f9796cfc1aa10722238ebbd8", 
           "help": {
             "online": ""
           }, 
@@ -40,7 +40,7 @@
               "name": "mkspiffs"
             }
           ], 
-          "size": "55326375"
+          "size": "55327155"
         }
       ], 
       "tools": [
