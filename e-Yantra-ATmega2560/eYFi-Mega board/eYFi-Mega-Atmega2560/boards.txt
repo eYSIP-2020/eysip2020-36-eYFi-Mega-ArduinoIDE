@@ -3,7 +3,53 @@
 menu.cpu=Processor
 menu.eYFi-OTA=eYFi-OTA
 ##############################################################
-eyfi.name=eYFi-Mega (ATmega2560 Section)
+eyfi_atmega2560.name=eYFi-Mega (ATmega2560 Section)
+
+#eyfi.vid.0=0x0403
+#eyfi.pid.0=0x6001
+
+eyfi_atmega2560.upload.tool=avrdude
+eyfi_atmega2560.upload.maximum_data_size=8192
+
+eyfi_atmega2560.bootloader.tool=avrdude
+eyfi_atmega2560.bootloader.low_fuses=0xFF
+eyfi_atmega2560.bootloader.unlock_bits=0x3F
+eyfi_atmega2560.bootloader.lock_bits=0x0F
+
+eyfi_atmega2560.build.f_cpu=16000000L
+eyfi_atmega2560.build.core=arduino
+eyfi_atmega2560.build.variant=eyfi_mega
+# default board may be overridden by the cpu menu
+eyfi.build.board=AVR_MEGA2560
+
+eyfi_atmega2560.menu.eYFi-OTA.disabled=Disabled
+eyfi_atmega2560.menu.eYFi-OTA.disabled.build.defines=-mode=wired
+
+eyfi_atmega2560.menu.eYFi-OTA.wupload=Upload
+eyfi_atmega2560.menu.eYFi-OTA.wupload.build.defines=-mode=wireless-u
+
+eyfi_atmega2560.menu.eYFi-OTA.wuploadflash=Upload & Flash
+eyfi_atmega2560.menu.eYFi-OTA.wuploadflash.build.defines=-mode=wireless-uf
+
+## Arduino Mega w/ ATmega2560
+## -------------------------
+eyfi_atmega2560.menu.cpu.atmega2560=ATmega2560 (Mega 2560)
+
+eyfi_atmega2560.menu.cpu.atmega2560.upload.protocol=wiring
+eyfi_atmega2560.menu.cpu.atmega2560.upload.maximum_size=253952
+eyfi_atmega2560.menu.cpu.atmega2560.upload.speed=115200
+
+eyfi_atmega2560.menu.cpu.atmega2560.bootloader.high_fuses=0xD8
+eyfi_atmega2560.menu.cpu.atmega2560.bootloader.extended_fuses=0xFD
+eyfi_atmega2560.menu.cpu.atmega2560.bootloader.file=stk500v2/stk500boot_v2_mega2560.hex
+
+eyfi_atmega2560.menu.cpu.atmega2560.build.mcu=atmega2560
+eyfi_atmega2560.menu.cpu.atmega2560.build.board=AVR_MEGA2560
+
+
+##############################################################
+##############################################################
+eyfi.name=eYFi-Mega
 
 eyfi.vid.0=0x0403
 eyfi.pid.0=0x6001

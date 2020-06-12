@@ -25,17 +25,17 @@
           ], 
           "toolsDependencies": [
             {
-              "packager": "eYFi-Mega-ESP32-board", 
+              "packager": "eYFi-Mega-ESP32-Section", 
               "version": "1.22.0-80-g6c4433a-5.2.0", 
               "name": "xtensa-esp32-elf-gcc"
             }, 
             {
-              "packager": "eYFi-Mega-ESP32-board", 
+              "packager": "eYFi-Mega-ESP32-Section", 
               "version": "2.6.1", 
               "name": "esptool_py"
             }, 
             {
-              "packager": "eYFi-Mega-ESP32-board", 
+              "packager": "eYFi-Mega-ESP32-Section", 
               "version": "0.2.3", 
               "name": "mkspiffs"
             }
@@ -257,8 +257,8 @@
           ]
         }
       ], 
-      "email": "hristo@espressif.com", 
-      "name": "eYFi-Mega-ESP32-board"
+      "email": "support@e-yantra.org", 
+      "name": "eYFi-Mega-ESP32-Section"
     }
   ]
 }
