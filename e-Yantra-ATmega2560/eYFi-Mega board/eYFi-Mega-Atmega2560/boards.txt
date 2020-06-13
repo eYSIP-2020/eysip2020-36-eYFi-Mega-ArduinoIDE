@@ -5,8 +5,8 @@ menu.eYFi-OTA=eYFi-OTA
 ##############################################################
 eyfi_atmega2560.name=eYFi-Mega (ATmega2560 Section)
 
-eyfi.vid.0=0x0403
-eyfi.pid.0=0x6001
+eyfi_atmega2560.vid.0=0x0403
+eyfi_atmega2560.pid.0=0x6001
 
 eyfi_atmega2560.upload.tool=avrdude
 eyfi_atmega2560.upload.maximum_data_size=8192
