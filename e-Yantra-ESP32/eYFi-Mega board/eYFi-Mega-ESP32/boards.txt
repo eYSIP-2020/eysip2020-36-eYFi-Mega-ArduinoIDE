@@ -58,6 +58,9 @@ eyfi_esp.menu.PSRAM.disabled.build.defines=
 eyfi_esp.menu.PSRAM.enabled=Enabled
 eyfi_esp.menu.PSRAM.enabled.build.defines=-DBOARD_HAS_PSRAM -mfix-esp32-psram-cache-issue
 
+
+eyfi_esp.menu.PartitionScheme.eyfi_mega_default=eYFi-Mega Default (1MB OTA/2MB APP/700KB SPIFFS)
+eyfi_esp.menu.PartitionScheme.default.build.partitions=eyfi_mega_default
 eyfi_esp.menu.PartitionScheme.default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 eyfi_esp.menu.PartitionScheme.default.build.partitions=default
 eyfi_esp.menu.PartitionScheme.defaultffat=Default 4MB with ffat (1.2MB APP/1.5MB FATFS)
@@ -91,8 +94,7 @@ eyfi_esp.menu.PartitionScheme.fatflash.upload.maximum_size=2097152
 eyfi_esp.menu.PartitionScheme.app3M_fat9M_16MB=16M Flash (3MB APP/9MB FATFS)
 eyfi_esp.menu.PartitionScheme.app3M_fat9M_16MB.build.partitions=app3M_fat9M_16MB
 eyfi_esp.menu.PartitionScheme.app3M_fat9M_16MB.upload.maximum_size=3145728
-eyfi_esp.menu.PartitionScheme.eyfi_mega_default=eYFi-Mega Default (1MB OTA/2MB APP/700KB SPIFFS)
-eyfi_esp.menu.PartitionScheme.default.build.partitions=eyfi_mega_default
+
 
 eyfi_esp.menu.CPUFreq.240=240MHz (WiFi/BT)
 eyfi_esp.menu.CPUFreq.240.build.f_cpu=240000000L
