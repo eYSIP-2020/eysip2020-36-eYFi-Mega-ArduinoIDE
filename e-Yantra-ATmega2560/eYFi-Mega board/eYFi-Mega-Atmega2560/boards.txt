@@ -20,7 +20,7 @@ eyfi_atmega2560.build.f_cpu=16000000L
 eyfi_atmega2560.build.core=arduino
 eyfi_atmega2560.build.variant=eyfi_mega
 # default board may be overridden by the cpu menu
-eyfi.build.board=AVR_MEGA2560
+eyfi_atmega2560.build.board=AVR_MEGA2560
 
 eyfi_atmega2560.menu.eYFi-OTA.disabled=Disabled
 eyfi_atmega2560.menu.eYFi-OTA.disabled.build.defines=-mode=wired

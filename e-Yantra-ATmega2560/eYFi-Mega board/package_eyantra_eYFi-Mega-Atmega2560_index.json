@@ -12,8 +12,8 @@
           "category": "Contributed",
           "url": "https://github.com/souravjena/eysip2020-36-eYFi-Mega-ArduinoIDE/blob/master/e-Yantra-ATmega2560/eYFi-Mega%20board/eYFi-Mega-Atmega2560.zip?raw=true",
           "archiveFileName": "eYFi-Mega-Atmega2560.zip",
-          "checksum": "SHA-256:ac780c3cf029dc0a307ff35dd4aacdd52dfdd06859ce906ba49b0ca9c3771918",
-          "size": "23032604",
+          "checksum": "SHA-256:1bf634be0093c8a829e6b2b661d88b4ae6c405697f92c885c913b5f9db66e0b2",
+          "size": "23032451",
           "boards": [
             {"name": "eYFi-Mega (ATmega2560 Section)"}
           ],
