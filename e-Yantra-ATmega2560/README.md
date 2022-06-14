@@ -98,28 +98,28 @@ $ arduino-cli upload -p /dev/ttyACM0 --fqbn e-Yantra:avr:eyfi MyFirstSketch
 First we have to create a package which contains the same architecture files and same board files, for example we have to add Atmega2560 board thus we have to add all the files related to avr architecture by copying or finding it on the official github repo of arduino.
 Let's edit the package for Atmega2560 controller first,
 First we have to add all files from the avr package, which contains all these files as shown in the github repo,
-![Github avr package info](/Images/explain1.png)
+![Github avr package info](./Images/explain1.png)
 Now we have to edit the boards file for adding our eYFi-Mega custom board, now we have to add the name of the board and board id i.e. eYFi-Mega Atmega2560 and eyfi respectively, we have to delete all other board configuration except mega one and edit on that configuration as shown,
-![boards file](/Images/2nd.png)
+![boards file](./Images/explain2.png)
 We also have to change the board name and version of the board in the platform.txt file as shown below,
-![Platform file](/Images/3rd.png)
+![Platform file](./Images/explain3.png)
 Now coming to the esp32 controller,
 We have to copy all the package files fom the official esspresif esp32 github repo which contains all the files,
-![Github esp32 package info](/Images/4th.png)
+![Github esp32 package info](./Images/explain4.png)
 Now we have to follow same procedure as done in Atmega2560 such as changing board file and platform files,
 Now for board file we have to remove all the boards configuration except esp32 dev module and change the name of the board and board id as shown below,
-![board file esp32](/Images/5th.png)
+![board file esp32](./Images/explain5.png)
 Also changing the platform.txt file as shown below for respective name and version of the controller,
-![platform file esp32](/Images/6th.png)
+![platform file esp32](./Images/explain6.png)
 Also for both the controller we have to delete all the variants except **standard** for avr controller and **esp32** for esp32 controller,
 
 Now coming to the json file we have to first add the platform specs in the json file with the following configuration as shown, but in tools and tools dependencies we dont have to put any tools as it is default getting the path from the arduino pre installed tools from the bin folder,
-![json avr](/Images/7th.png)
+![json avr](./Images/explain7.png)
 For esp32 we have to add the tools as shown below and also give the **packager** name same as that one of the platform name which is customized by us, as shown below,
-![json esp32](/Images/8th.png)
+![json esp32](./Images/explain8.png)
 Adding custom bootloader for esp32 and custom partition for esp32,
 To add custom bootloader we have to add these files in directory as packages/eYFi-Mega-ESP32-board/hardware/esp32/1.0.0/tools/partition, here we have to add the eyfi_mega_default.csv which is our custom partition,
-![partition files](/Images/9th.png)
+![partition files](./Images/explain9.png)
 Now we have to add the directory in the platform file and also add one extra menu for custom partition for our board in the menu section of arduino ide,
 This is the addition in the platform.txt file,
 ```ruby
@@ -134,16 +134,16 @@ eyfi_esp.menu.PartitionScheme.eyfi_mega_default=eYFi-Mega Default (1MB OTA/2MB A
 eyfi_esp.menu.PartitionScheme.default.build.partitions=eyfi_mega_default
 ```
 We also have to add custom bootloader for esp32 in the directory packages/eYFi-Mega-ESP32-board/hardware/esp32/1.0.0/tools/ here we have to add a folder eyfi-mga and add all these files,
-![bootloader files](/Images/10th.png)
-![bootloader files](/Images/11th.png)
+![bootloader files](./Images/explain10.png)
+![bootloader files](./Images/explain11.png)
 Now we have to add tools for esp32 and Atmega2560 to upload and flash our program to both the controller through OTA, thus we have to modify the json file for each board and also add the compressed file for these tools,
 
 For Atmega2560 we have to first store these three files in a folder as shown and then zip this folder and copy the github directory of th file,
-![tools files](/Images/12th.png)
+![tools files](./Images/explain12.png)
 Now we have to paste the link in the url of the tools and checksum value and archive filename of the zip as shown below,
-![json file for tools addition](/Images/13th.png)
+![json file for tools addition](./Images/explain13.png)
 For esp32 we have to create one folder named esptool_py and then paste all the flashers and then zip the file as shown below,
-![json file for tools addition esp32](/Images/14th.png)
+![json file for tools addition esp32](./Images/explain14.png)
 Now we have to edit the platform and json files, for platform.txt we have to add the directory for flashing tools as shown below 
 For Atmega250,
 ```ruby
